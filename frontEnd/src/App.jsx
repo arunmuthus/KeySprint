@@ -13,6 +13,7 @@ export default function App() {
       let [str,setStr] = useState('');
       
       function restart(){
+            setStr('');
             setIsCompleted(false);
             setTimer(10);
       }
