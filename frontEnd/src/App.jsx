@@ -7,14 +7,22 @@ import { useEffect, useState } from 'react';
 import Leaderborad from './Leaderboard.jsx'
 
 export default function App() {
-      let isCompleted = false;
+      
+      let [isCompleted,setIsCompleted] = useState(false);
       let[Timer,setTimer] = useState(10)
       let [str,setStr] = useState('');
       
+      function restart(){
+            setIsCompleted(false);
+            setTimer(10);
+      }
+
       useEffect(()=>{
             let TimeOut
           if(Timer===0){
-             setTimer(prev=>prev+10);
+            setIsCompleted(true);
+            setStr('');
+             
           }
           else{
          TimeOut = setTimeout(()=>{
@@ -37,14 +45,14 @@ export default function App() {
                  <h3>What do you do, and how do you handle the situation?</h3>
                   
                   
-                  <div className="button">Once again lets do it</div>
+                  <div className="button" onClick={restart}>Once again lets do it</div>
             </div>
-           { isCompleted ? 
-            <div className="result"></div>:
+         
+            
             <div className="type">
-            <Disp str={str}/>
-            <Keys  setStr={setStr}/>
-            </div>}
+             {isCompleted ? <div className="result"></div>: <Disp str={str}/>}
+             <Keys  setStr={setStr}/>
+            </div>
 
 
             <div className="user">
