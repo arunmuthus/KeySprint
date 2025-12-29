@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.App{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+}
+.question{
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+    color:rgba(0, 0, 0, 0.80);
+    display: flex;
+    flex-direction: column;
+    gap:5%;
+    align-items: center;
+    padding: 2%;
+}
+
+.user{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%; 
+}
+.qtext{
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+    color: rgba(0, 0, 0, 0.81);
+}
+.button{
+    height: 70px;
+    width: 170px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 15%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin: 0px 4px 0px;
+    transition: 0.4s;
+}
+.button:hover{
+    background-color: black;
+  color: antiquewhite;
+}

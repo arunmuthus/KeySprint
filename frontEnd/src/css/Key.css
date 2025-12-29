@@ -1,0 +1,23 @@
+.key{
+    height: 70px;
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 15%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin: 0px 4px 0px;
+}
+
+.key.active{
+  background-color: black;
+  color: antiquewhite;
+}
+.backspace{
+    width: 140px;
+}
+.spacebar{
+  width: 500px;
+}
