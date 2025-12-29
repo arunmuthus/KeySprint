@@ -4,8 +4,10 @@ import Disp from './Disp'
 import Keys from './Keys'
 import Student from './Student';
 import { useEffect, useState } from 'react';
+import Leaderborad from './Leaderboard.jsx'
 
 export default function App() {
+      let isCompleted = false;
       let[Timer,setTimer] = useState(10)
       let [str,setStr] = useState('');
       
@@ -37,15 +39,17 @@ export default function App() {
                   
                   <div className="button">Once again lets do it</div>
             </div>
-
+           { isCompleted ? 
+            <div className="result"></div>:
             <div className="type">
             <Disp str={str}/>
             <Keys  setStr={setStr}/>
-            </div>
+            </div>}
 
 
             <div className="user">
                   <Student profile='A' name='Arunmuthu' score='100'/>
+                  <Leaderborad></Leaderborad>
             </div>
       </div>
 }

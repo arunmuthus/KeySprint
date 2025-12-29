@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 .student{
  height: 50%;
- background-color: beige;
  display: flex;
  flex-direction: column;
  align-items: center;
- justify-content: center;
+ 
+ gap: 5%;
 }
 .profile{
     height: 18%;
@@ -16,7 +16,20 @@
     align-items: center;
     justify-content: center;
     color: antiquewhite;
+    
 }
 .profiletter{
    font-size: xx-large;
+}
+.name{
+    font-size: large;
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+}
+.scoretext{
+      font-family: "Open Sans", sans-serif;
+      font-weight:600;
+}
+.score{
+ font-family: "Open Sans", sans-serif;
 }
