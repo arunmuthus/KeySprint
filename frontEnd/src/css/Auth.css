@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+.auth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(36, 36, 36);
+}   
+
+.logo{
+    height: 100%;
+    width: 50%;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 5%;
+      font-family: "Bungee Outline", sans-serif;
+}
+.logo>h1{
+    font-size: 4rem;
+}
+.logo>h2{
+    font-size: 2rem;
+}
+.auth{
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.a{
+    position: absolute;
+    z-index: 1;
+}
+.k{
+  height: 18%;
+  width: 40%;
+  background-color: rgb(36, 36, 36);
+  top: 25%;
+  left:55%;
+  animation-name: move;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes move {
+    0%{
+        left: 15%;
+    }
+    100%{
+        left: 55%;
+        width: 0;
+    }
+}
+.s{
+    height: 17%;
+    width: 70%;
+    background-color: rgb(36, 36, 36);
+    top: 47%;
+    left:15%;
+    animation-name: move2;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes move2 {
+    0%{
+        left: 15%;
+        width: 70%;
+    }
+    100%{
+        left: 85%;
+        width: 0;
+    }
+}
+
+.l{
+    height: 4%;
+    width: 75%;
+    top: 72%;
+    background-color: rgb(36, 36, 36);
+    animation-name: move3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes move3 {
+    0%{
+       
+    }
+    100%{
+        width: 0;
+    }
+}
