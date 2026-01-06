@@ -1,5 +1,10 @@
 import  './css/Auth.css';
+import {useState} from 'react';
+import {Login} from './login.jsx';
+import {Signup} from './signup.jsx';
 export const Auth = () => {
+
+    let [showLogin,setShowLogin]=useState(true);
     return(
         <div className="auth-container">
 
@@ -13,7 +18,15 @@ export const Auth = () => {
         </div>
 
         <div className="auth">
-              
+              <div className="form">
+                <div className="head">
+                    <div className="login" onClick={()=>{setShowLogin(true)}}>Login</div>
+                    <div className="signup" onClick={()=>{setShowLogin(false)}}>Signup</div>
+                </div>
+                <div className="field">
+                  {showLogin ? <Login/> : <Signup/>}
+                </div>
+              </div>
         </div>
         </div>
     )

@@ -30,8 +30,10 @@
     height: 100%;
     width: 50%;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .a{
     position: absolute;
@@ -42,9 +44,10 @@
   width: 40%;
   background-color: rgb(36, 36, 36);
   top: 25%;
-  left:55%;
+  left:15%;
   animation-name: move;
   animation-duration: 1.5s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -67,7 +70,7 @@
     animation-name: move2;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
-    animation-delay: 0.5s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
 }
 @keyframes move2 {
@@ -89,7 +92,7 @@
     animation-name: move3;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
-    animation-delay: 1s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
 }
 @keyframes move3 {
@@ -99,4 +102,82 @@
     100%{
         width: 0;
     }
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.head{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login{
+    cursor: pointer;
+    height: 100%;
+    font-family: open-sans, sans-serif;
+    width: 60px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    transition: 1s; 
+}
+.signup{
+    cursor: pointer;
+    height: 100%;;
+    font-family: open-sans, sans-serif;
+    width: 70px;
+    color: antiquewhite;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    transition: 1s;
+}
+.signup:hover, .login:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+.btn{
+    height: 25px;
+    width: 70px;
+    color: black;
+    background-color: antiquewhite;
+    font-family: open-sans, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    cursor:pointer;
+    transition: 0.5s;
+    }
+.btn:hover{
+    color: antiquewhite;
+    background-color: transparent;
+}
+.inps{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+.input{
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    width: 400px;
+    text-align: center;
+    color: antiquewhite;
+    font-size: medium;
+    border: 0.1px solid antiquewhite;
+}
+.input:focus{
+    outline: none;
 }
